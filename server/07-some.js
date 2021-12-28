@@ -1,3 +1,6 @@
+/**
+ * VALIDA QUE ALMENOS 1 ELEMENTO DEL ARREGLO CUMPLAN CON LA CONDICION
+ */
 const numbers = [1, 2, 3, 4];
 
 const rta = numbers.some( item => item % 2 === 0 );
@@ -25,3 +28,12 @@ const newAppointment = {
     endDate: new Date(2021, 1, 1, 9, 30),
 };
 const areIntervalsOverlapping = require('date-fns/areIntervalsOverlapping');
+
+const isOverlap = ( newDate ) => {
+    return dates.some( date => {
+        return areIntervalsOverlapping(
+            { start: date.startDate, end: date.endDate },
+            { start: newDate.startDate, end: newDate.endDate }
+        )
+    } )
+}

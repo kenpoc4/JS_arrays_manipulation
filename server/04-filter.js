@@ -1,3 +1,6 @@
+/**
+ * CREA UN NUEVO ARREGLO CON LOS ELEMENTOS QUE CUMPLAN CON LA CONDICION
+ */
 const words = [ 'spray', 'limit', 'elite', 'exuberant' ];
 
 // Filtrando elementos que no sean mayores de 6 letras
